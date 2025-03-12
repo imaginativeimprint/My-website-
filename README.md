@@ -127,7 +127,7 @@
             </p>
         </details>
         <br>
-        <p>Explore my profiles below:</p>
+        <p>Explore my profiles below:</p><br>
         <div>
             <a href="https://www.linkedin.com/in/shashank-p-6966b0315?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAFAD1tIBWeJ5El079otY4ykuY0YsitNCQ3c&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BypVV2GC8T7Sg2nboNafnLQ%3D%3D" target="_blank" onclick="return showAlert();">LinkedIn</a> |
             <a href="https://www.instagram.com/imaginative_imprint" target="_blank" onclick="return showAlert1();">Instagram</a> |
@@ -140,7 +140,7 @@
     <script>
         function showAlert() {
             alert("Opening LinkedIn Profile");
-            return true; // Allow navigation to proceed
+            return true; //Allow navigation to proceed
         }
 
         function showAlert1() {
