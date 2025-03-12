@@ -133,7 +133,7 @@
             <a href="https://www.instagram.com/imaginative_imprint" target="_blank" onclick="return showAlert1();">Instagram</a> |
             <a href="https://github.com/imaginativeimprint" target="_blank" onclick="return showAlert2();">GitHub</a>
         </div>
-    </main>
+    </main><br>
     <footer>
         <p>&copy; 2025 My Website. All rights reserved.</p>
     </footer>
