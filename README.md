@@ -4,6 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kebab Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    body.light-mode {
+      background-color: #ffffff;
+      color: #000000;
+    }
+    body.dark-mode {
+      background-color: #000000;
+      color: #ffffff;
+    }
+    .kebab-menu {
+      position: absolute;
+      top:10px;
+      right:10px;
+      display: inline-block;
+
+    }
+    .kebab-icon {
+      cursor: pointer;
+      font-size: 24px;
+    }
+    .menu-dropdown {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f1f1f1;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      z-index: 1;
+    }
+    .menu-dropdown a, .menu-dropdown button {
+      display: block;
+      margin: 5px 0;
+      text-decoration: none;
+      color: #333;
+    }
+    .menu-dropdown a:hover, .menu-dropdown button:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="light-mode">
+  <div class="kebab-menu">
+    <div class="kebab-icon" onclick="toggleMenu()">☰</div>
+    <div class="menu-dropdown" id="dropdown">
+      <div>
+        <strong>Owner Profile</strong>
+        <p><img src="C:\Users\user\OneDrive\Pictures\Screenshots\Screenshot 2025-02-10 220135.png" alt="Profile Photo" style="width:50px;height:50px;border-radius:50%;"></p>
+        <p>Name: Shashank</p>
+        <p>Email: shashank18at2024@gmail.com</p>
+      </div>
+      <details>
+            <summary>
+                <h6 id="section1">Educational Qualification</h6>
+            </summary>
+            <p>
+                <ul>
+                    <li>
+                        <h7>Bachelor of Engineering in Computer Science and Engineering (2025 - Present)</h7>
+                        Currently pursuing my 1st semester at East West Institute of Technology through CET quota.<br>
+                        Gaining foundational knowledge in computer science principles and practical applications.
+                    </li>
+                </ul>
+                <br>
+                <ul>
+                    <li>
+                        <h7>Pre-University Course (PUC) - Science Stream (2022 - 2024)</h7>
+                        Secured distinction in the Karnataka Pre-University Examination.<br>
+                        Specialized in subjects like Physics, Chemistry, Mathematics.
+                    </li>
+                </ul>
+                <br>
+                <ul>
+                    <li>
+                        <h7>Secondary Education (2012 - 2022)</h7>
+                        Achieved distinction in the Karnataka Secondary Education Examination (10th Standard).
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h7>Skills and Certifications</h7>
+                        Proficient in Python, HTML, and Web Development.<br>
+                        Successfully completed relevant courses and hands-on projects in web technologies.
+                    </li>
+                </ul>
+            </p>
+        </details>
+      <button onclick="toggleTheme()">Toggle Theme</button>
+      <div class="menu-dropdown" id="dropdown">
+  <div>
+    <strong>Your Profile</strong>
+    <p>
+      <img src="C:\Users\user\OneDrive\Pictures\Screenshots\Screenshot 2025-02-10 220135.png" alt="Profile Photo" style="width:50px;height:50px;border-radius:50%;">
+    </p>
+    <p>Name: Shashank</p>
+    <p>Email: shashank18at2024@gmail.com</p>
+  </div>
+  <button onclick="toggleTheme()">Toggle Theme</button>
+
+  <!-- Educational Qualification Section -->
+  <div>
+    <h3>Educational Qualification</h3>
+    <ul>
+      <li>
+        <h5>Bachelor of Engineering in Computer Science and Engineering (2025 - Present)</h5>
+        Currently pursuing my 1st semester at East West Institute of Technology through CET quota.<br>
+        Gaining foundational knowledge in computer science principles and practical applications.
+      </li>
+      <li>
+        <h5>Pre-University Course (PUC) - Science Stream (2022 - 2024)</h5>
+        Secured distinction in the Karnataka Pre-University Examination.<br>
+        Specialized in subjects like Physics, Chemistry, Mathematics.
+      </li>
+      <li>
+        <h5>Secondary Education (2012 - 2022)</h5>
+        Achieved distinction in the Karnataka Secondary Education Examination (10th Standard).
+      </li>
+      <li>
+        <h5>Skills and Certifications</h5>
+        Proficient in Python, HTML, and Web Development.<br>
+        Successfully completed relevant courses and hands-on projects in web technologies.
+      </li>
+    </ul>
+  </div>
+</div>
+
+    </div>
+  </div>
+  <script>
+    function toggleMenu() {
+      const dropdown = document.getElementById('dropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+      document.body.classList.toggle('light-mode');
+    }
+  </script>
+</body>
+</html>
     <style>
         /* Inline CSS */
         body {
@@ -127,20 +277,20 @@
             </p>
         </details>
         <br>
-        <p>Explore my profiles below:</p><br>
+        <p>Explore my profiles below:</p>
         <div>
             <a href="https://www.linkedin.com/in/shashank-p-6966b0315?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAAFAD1tIBWeJ5El079otY4ykuY0YsitNCQ3c&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BypVV2GC8T7Sg2nboNafnLQ%3D%3D" target="_blank" onclick="return showAlert();">LinkedIn</a> |
             <a href="https://www.instagram.com/imaginative_imprint" target="_blank" onclick="return showAlert1();">Instagram</a> |
             <a href="https://github.com/imaginativeimprint" target="_blank" onclick="return showAlert2();">GitHub</a>
         </div>
-    </main><br>
+    </main>
     <footer>
         <p>&copy; 2025 My Website. All rights reserved.</p>
     </footer>
     <script>
         function showAlert() {
             alert("Opening LinkedIn Profile");
-            return true; //Allow navigation to proceed
+            return true; // Allow navigation to proceed
         }
 
         function showAlert1() {
