@@ -1,21 +1,18 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kebab Menu</title>
-  <style>
+   <title>My Website</title>
+   <style>
+    /* Body styling */
     body {
       font-family: Arial, sans-serif;
       margin: 20px;
-      transition: background-color 0.3s, color 0.3s;
+      transition: background-color 0.3s, color 0.3s, filter 0.3s; /* Smooth transition for blur effect */
     }
+
+    /* Background modes */
     body.light-mode {
       background-color: #ffffff;
       color: #000000;
@@ -24,36 +21,99 @@
       background-color: #000000;
       color: #ffffff;
     }
+    body.blur {
+      filter: blur(5px); /* Apply blur effect to body when menu is open */
+    }
+
+    /* Kebab menu styling */
     .kebab-menu {
       position: absolute;
-      top:10px;
-      right:10px;
+      top: 10px;
+      right: 10px;
       display: inline-block;
-
     }
+
     .kebab-icon {
       cursor: pointer;
       font-size: 24px;
     }
+
+    /* Dropdown menu styling */
     .menu-dropdown {
-      display: none;
-      position: absolute;
-      right: 0;
+      display: none; /* Initially hidden */
+      position: fixed; /* Centered relative to the viewport */
+      top: 50%; /* Center vertically */
+      left: 50%; /* Center horizontally */
+      transform: translate(-50%, -50%); /* Corrects alignment */
       background-color: #f1f1f1;
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-      padding: 10px;
-      z-index: 1;
+      padding: 20px; /* Add padding inside the menu */
+      width: 300px; /* Medium size */
+      text-align: center; /* Center content inside */
+      z-index: 1000; /* Bring to the front */
+      border-radius: 10px; /* Optional rounded edges */
     }
+
+    /* Dropdown menu links and buttons styling */
     .menu-dropdown a, .menu-dropdown button {
       display: block;
-      margin: 5px 0;
+      margin: 10px 0;
       text-decoration: none;
       color: #333;
     }
+
     .menu-dropdown a:hover, .menu-dropdown button:hover {
       text-decoration: underline;
     }
+
+    /* Overlay styling for blurring background */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+      display: none; /* Initially hidden */
+      z-index: 999; /* Below the menu but above everything else */
+    }
   </style>
+</head>
+<body>
+
+  <!-- Kebab Menu Icon -->
+  <div class="kebab-menu">
+    <span class="kebab-icon" onclick="toggleMenu()">☰</span>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <div class="overlay" onclick="toggleMenu()"></div>
+  <div class="menu-dropdown">
+    <h3>Menu</h3>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <button onclick="toggleMenu()">Close</button>
+  </div>
+
+  <script>
+    // JavaScript to handle menu toggle
+    function toggleMenu() {
+      const body = document.body;
+      const menu = document.querySelector('.menu-dropdown');
+      const overlay = document.querySelector('.overlay');
+
+      // Toggle menu and background blur
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none'; // Hide menu
+        overlay.style.display = 'none'; // Hide overlay
+        body.classList.remove('blur'); // Remove blur
+      } else {
+        menu.style.display = 'block'; // Show menu
+        overlay.style.display = 'block'; // Show overlay
+        body.classList.add('blur'); // Apply blur
+      }
+    }
+  </script>
 </head>
 <body class="light-mode">
   <div class="kebab-menu">
@@ -67,7 +127,7 @@
       </div>
       <details>
             <summary>
-                <h6 id="section1">Educational Qualification</h6>
+                <h6 id="section1">Educational qualification</h6>
             </summary>
             <p>
                 <ul>
@@ -115,28 +175,7 @@
 
   <!-- Educational Qualification Section -->
   <div>
-    <h3>Educational Qualification</h3>
-    <ul>
-      <li>
-        <h5>Bachelor of Engineering in Computer Science and Engineering (2025 - Present)</h5>
-        Currently pursuing my 1st semester at East West Institute of Technology through CET quota.<br>
-        Gaining foundational knowledge in computer science principles and practical applications.
-      </li>
-      <li>
-        <h5>Pre-University Course (PUC) - Science Stream (2022 - 2024)</h5>
-        Secured distinction in the Karnataka Pre-University Examination.<br>
-        Specialized in subjects like Physics, Chemistry, Mathematics.
-      </li>
-      <li>
-        <h5>Secondary Education (2012 - 2022)</h5>
-        Achieved distinction in the Karnataka Secondary Education Examination (10th Standard).
-      </li>
-      <li>
-        <h5>Skills and Certifications</h5>
-        Proficient in Python, HTML, and Web Development.<br>
-        Successfully completed relevant courses and hands-on projects in web technologies.
-      </li>
-    </ul>
+    
   </div>
 </div>
 
@@ -218,38 +257,10 @@
         <p>Hello! I'm Shashank P, passionate about the technology field.</p> 
         <details>
             <summary>
-                <h2 id="section1">Educational Qualification</h2>
+                <h2 id="section1">section 1</h2>
             </summary>
             <p>
-                <ul>
-                    <li>
-                        <h5>Bachelor of Engineering in Computer Science and Engineering (2025 - Present)</h5>
-                        Currently pursuing my 1st semester at East West Institute of Technology through CET quota.<br>
-                        Gaining foundational knowledge in computer science principles and practical applications.
-                    </li>
-                </ul>
-                <br>
-                <ul>
-                    <li>
-                        <h5>Pre-University Course (PUC) - Science Stream (2022 - 2024)</h5>
-                        Secured distinction in the Karnataka Pre-University Examination.<br>
-                        Specialized in subjects like Physics, Chemistry, Mathematics.
-                    </li>
-                </ul>
-                <br>
-                <ul>
-                    <li>
-                        <h5>Secondary Education (2012 - 2022)</h5>
-                        Achieved distinction in the Karnataka Secondary Education Examination (10th Standard).
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h5>Skills and Certifications</h5>
-                        Proficient in Python, HTML, and Web Development.<br>
-                        Successfully completed relevant courses and hands-on projects in web technologies.
-                    </li>
-                </ul>
+                
             </p>
         </details>
         <details>
