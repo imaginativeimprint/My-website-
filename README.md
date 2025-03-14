@@ -123,46 +123,11 @@
     <div class="menu-dropdown" id="dropdown">
       <div>
         <strong>Owner Profile</strong>
-        <p><img src="C:\Users\user\OneDrive\Pictures\Screenshots\Screenshot 2025-02-10 220135.png" alt="Profile Photo" style="width:50px;height:50px;border-radius:50%;"></p>
+        <p><img src="https://assets.onecompiler.app/42zp5pya9/4335pt3mc/rocking.jpg" alt="Profile Photo" style="width:50px;height:50px;border-radius:50%;"></p>
         <p>Name: Shashank</p>
         <p>Email: shashank18at2024@gmail.com</p>
       </div>
-      <details>
-            <summary>
-                <h6 id="section1">Educational qualification</h6>
-            </summary>
-            <p>
-                <ul>
-                    <li>
-                        <h7>Bachelor of Engineering in Computer Science and Engineering (2025 - Present)</h7>
-                        Currently pursuing my 1st semester at East West Institute of Technology through CET quota.<br>
-                        Gaining foundational knowledge in computer science principles and practical applications.
-                    </li>
-                </ul>
-                <br>
-                <ul>
-                    <li>
-                        <h7>Pre-University Course (PUC) - Science Stream (2022 - 2024)</h7>
-                        Secured distinction in the Karnataka Pre-University Examination.<br>
-                        Specialized in subjects like Physics, Chemistry, Mathematics.
-                    </li>
-                </ul>
-                <br>
-                <ul>
-                    <li>
-                        <h7>Secondary Education (2012 - 2022)</h7>
-                        Achieved distinction in the Karnataka Secondary Education Examination (10th Standard).
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h7>Skills and Certifications</h7>
-                        Proficient in Python, HTML, and Web Development.<br>
-                        Successfully completed relevant courses and hands-on projects in web technologies.
-                    </li>
-                </ul>
-            </p>
-        </details>
+      
       <button onclick="toggleTheme()">Toggle Theme</button>
       <div class="menu-dropdown" id="dropdown">
   <div>
