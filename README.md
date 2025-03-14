@@ -250,7 +250,7 @@
     </header>
     <nav>
         <a href="http://www.linkedin.com/in/shashank-p-6966b0315">About Me</a>
-        <a href="#section1">Educational Qualification</a>
+        <a href="https://imaginativeimprint.github.io/My-Education/">Educational Qualification</a>
         <a href="#section2">Section 2</a>
         <a href="#section3">Section 3</a>
     </nav>
