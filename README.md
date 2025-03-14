@@ -130,20 +130,7 @@
       
       <button onclick="toggleTheme()">Toggle Theme</button>
       <div class="menu-dropdown" id="dropdown">
-  <div>
-    <strong>Your Profile</strong>
-    <p>
-      <img src="C:\Users\user\OneDrive\Pictures\Screenshots\Screenshot 2025-02-10 220135.png" alt="Profile Photo" style="width:50px;height:50px;border-radius:50%;">
-    </p>
-    <p>Name: Shashank</p>
-    <p>Email: shashank18at2024@gmail.com</p>
-  </div>
-  <button onclick="toggleTheme()">Toggle Theme</button>
 
-  <!-- Educational Qualification Section -->
-  <div>
-    
-  </div>
 </div>
 
     </div>
