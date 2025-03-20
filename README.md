@@ -2,7 +2,7 @@
 <head>
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>My Website</title>
+</head>
    <style>
     /* Body styling */
     body {
@@ -77,7 +77,6 @@
       z-index: 999; /* Below the menu but above everything else */
     }
   </style>
-</head>
 <body>
 
   <!-- Kebab Menu Icon -->
@@ -113,7 +112,6 @@
       }
     }
   </script>
-</head>
 <body class="light-mode">
   <div class="kebab-menu">
     <div class="kebab-icon" onclick="toggleMenu()">☰</div>
@@ -143,7 +141,6 @@
     }
   </script>
 </body>
-</html>
     <style>
         /* Inline CSS */
         body {
@@ -192,7 +189,6 @@
             color: #4CAF50;
         }
     </style>
-</head>
 <body>
     <header>
         <h1>Welcome to My Website</h1>
@@ -247,7 +243,7 @@
         </div>
     </main>
     <footer>
-        <p>&copy; 2025 My Website. All rights reserved.</p>
+        <p id="">&copy; 2025 My Website. All rights reserved.</p>
     </footer>
     <script>
         function showAlert() {
